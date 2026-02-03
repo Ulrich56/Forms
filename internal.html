@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de Réquisition Interne</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-gray-800 p-6">
+  
+  <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-8 border-4 border-amber-300"
+     style="font-family: Arial, sans-serif;">
+     <div class="h-60 mb-4 flex justify-center">
+    <img src="logo.jpeg" alt="Logo Négociant Civil" />
+  </div>
+
+    <!-- Titre principal -->
+    <h1 class="text-3xl font-bold text-amber-600 mb-6 bg text-center">INTERNAL PURCHASE REQUISITION</h1>
+    
+    <!-- Informations générales -->
+    <h2 class="section-title text-2xl">General information</h2>
+    <hr class="mb-4 border-amber-300 border-2" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <input type="text" placeholder="Date" class="input-field bg-transparent " />
+      <input type="tel" placeholder="Phone" class="input-field bg-transparent" />
+      <input type="email" placeholder="E-mail" class="input-field bg-transparent " />
+      <input type="text" placeholder="Requester" class="input-field bg-transparent" />
+      <input type="text" placeholder="Departement" class="input-field bg-transparent" />
+      <input type="text" placeholder="Payment Terms" class="input-field bg-transparent" />
+      <input type="text" placeholder="Date of Delivery" class="input-field bg-transparent" />
+      <input type="text" placeholder="Requisition Number" class="input-field bg-transparent" />
+      <input type="text" placeholder="Freight Terms" class="input-field bg-transparent" />
+      <input type="text" placeholder="Vendor Id No" class="input-field bg-transparent" />
+    </div>
+
+    <div class="flex flex-row gap-8 mb-6">
+      <!-- Vendor -->
+      <div class="flex-1"> 
+        <h2 class="section-title text-2xl">Vendor information</h2> 
+        <hr class="mb-4 border-amber-300 border-2" />
+        <div class="grid grid-cols-1 gap-4">
+          <input type="text" placeholder="Name" class="input-field border-b-2 border-gray-700 bg-transparent" /> 
+          <input type="tel" placeholder="Phone" class="input-field border-b-2 border-gray-700 bg-transparent" /> 
+          <input type="text" placeholder="Address" class="input-field border-b-2 border-gray-700 bg-transparent" /> 
+          <input type="text" placeholder="Account" class="input-field border-b-2 border-gray-700 bg-transparent" /> 
+          <input type="number" placeholder="Amount" class="input-field border-b-2 border-gray-700 bg-transparent" /> 
+        </div> 
+      </div> 
+
+      <!-- Ship To -->
+      <div class="flex-1"> 
+        <h2 class="section-title text-2xl">Ship to</h2>
+        <hr class="mb-4 border-amber-300 border-2" /> 
+        <div class="grid grid-cols-1 gap-4"> 
+          <input type="text" placeholder="Name" class="input-field bg-transparent" /> 
+          <input type="tel" placeholder="Phone" class="input-field bg-transparent" /> 
+          <input type="text" placeholder="Address" class="input-field bg-transparent" /> 
+          <input type="text" placeholder="Account" class="input-field bg-transparent" /> 
+          <input type="number" placeholder="Amount" class="input-field bg-transparent" /> 
+        </div> 
+    </div> 
+  </div>
+
+
+    <!-- Tableau -->
+    <table class="w-full table-auto border-2 border-gray-400 mb-6">
+      <thead class="bg-amber-100 text-amber-700">
+        <tr >
+          <th class="px-2 py-1 border-2 border-gray-00">Item</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Description</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Commodity Code</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Quantity</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Unit</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Unit Price</th>
+          <th class="px-2 py-1 border-2 border-gray-00">Extended Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price " /></td>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price" /></td>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price" /></td>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price" /></td>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price" /></td>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="text" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent " /></td>
+          <td class="px-2 py-1 border-2 border-gray-00"><input type="number" class="w-full bg-transparent extended-price" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Total -->
+    <div class="mb-6">
+      <label class="block font-semibold text-amber-700 mb-1">Total Price</label>
+      <input type="number" id="total-field" class="input-field w-1/2" readonly />
+    </div>
+
+    <!-- Infos suplémentaires -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <input type="text" placeholder="Requester Date" class="input-field" />
+      <input type="text" placeholder="Director Date" class="input-field" />
+      <input type="text" placeholder="President Date" class="input-field" />
+    </div>
+
+    <!-- Purpose -->
+    <h2 class="mb-1 text-amber-700 text-xl">Purpose</h2>
+    <hr class="mb-4 border-amber-300 border-2" />
+    <textarea rows="4" class="w-full bg-amber-200"></textarea>
+
+    <!-- Bouton -->
+    <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded">
+      Submit
+    </button>
+  </div>
+
+  <style>
+    .input-field {
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      border-bottom: 2px solid #b8860b;
+      color: black;
+    }
+    .input-field:focus {
+      outline: none;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #b45309;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+  </style>
+
+  <script>
+  function updateTotal() {
+    const priceFields = document.querySelectorAll('.extended-price');
+    let total = 0;
+
+    priceFields.forEach(field => {
+      const value = parseFloat(field.value);
+      if (!isNaN(value)) {
+        total += value;
+      }
+    });
+
+    document.getElementById('total-field').value = total.toFixed(2);
+  }
+
+  document.querySelectorAll('.extended-price').forEach(field => {
+    field.addEventListener('input', updateTotal);
+  });
+</script>
+
+</body>
+</html>
